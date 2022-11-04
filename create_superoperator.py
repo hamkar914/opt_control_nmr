@@ -1,6 +1,6 @@
 '''Written by Hampus Karlsson (hamka@chalmers.se/hkarlsson914@gmail.com) October 2022.
    Python script for creating superoperator versions of NMR spin Hamiltonians. The script
-   starts with with a Hilbert space version of the spin Hamiltonian for a spin system
+   starts with a Hilbert space version of the spin Hamiltonian for a spin system
    consisting of two coupled spin 1/2 nuclei. It then calculates and prints out the Liouville
    space superoperator version of the Hamiltonian to be used in other scripts.
 
