@@ -14,7 +14,8 @@ def generate_wigner(eul_ang_triplet):
 
     '''Returns a 2nd rank, 5x5 Wigner matrix with euler angles
        supplied in tuple "eul_ang_triplet" (angles in radians).
-       Based on eq. 2.98 and table 2.4 Ref.1 and eq.49 Ref.2.'''
+       Based on eq. 2.98 and table 2.4 Ref.1 and eq.49 Ref.2.
+       Output confirmed with SpinDynamica WignerD function.'''
 
     alpha = eul_ang_triplet[0]
     beta = eul_ang_triplet[1]
@@ -46,5 +47,3 @@ def generate_wigner(eul_ang_triplet):
             Wigner[row,col] = np.exp(-1j*mp*alpha)*red_wig[row,col]*np.exp(-1j*m*gamma)
 
     return Wigner
-
-print(generate_wigner((0.5,0.2,1.0)))
